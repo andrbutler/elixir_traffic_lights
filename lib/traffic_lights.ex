@@ -122,7 +122,7 @@ defmodule TrafficLights do
 
     @impl true
     def init(_args) do
-      list = Enum.map(1..6, fn _ -> 
+      list = Enum.map(1..5, fn _ -> 
         {:ok, pid} = Light.start_link([])
         pid
       end)
